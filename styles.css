@@ -1,0 +1,160 @@
+/* --- GENERAL --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+} 
+
+body {
+  background-color: #F2F4FC;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* background-color: red;  */ /*IDENTIFICADOR*/
+  display: block; /*Lo aplico para quitar el margen inferior por defecto de todas las imágenes*/
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #072AC8;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+/* --- HEADER --- */
+
+#header {
+  display: flex;
+  position: sticky;
+  top: 0; /* se pega al borde superior cuando scrolleás */
+  z-index: 1000; /* para que quede por encima de otros elementos */
+  background-color: #F2F4FC;
+  justify-content: space-between;
+  align-items: top;
+  width: 100%;
+  padding: 1rem;
+}
+
+.header-cont-1 {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: auto;
+  height: 1.5rem;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.header-cont-2 {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+ }
+
+#nav-menu {
+  display: none; /*Con ello dejo oculto el menú por defecto*/
+  flex-direction: column;
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: center;
+  }
+
+#nav-menu.active {
+  display: flex; /*Cuando se activa (clase .active), se muestra*/
+}
+
+#nav-menu ul {
+  list-style: none;  
+}
+
+.nav-link {
+  color: #072AC8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: white;
+  background-color: #072AC8;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem;  
+  border-radius: 0.5rem;
+}
+
+.header-cont-3 {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#menu-hamburger {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.bar {
+  width: 1.5rem;
+  height: 0.3rem;
+  background-color: none;
+  background: #6B708D;;
+  border-radius: 0.5rem;
+}
+
+/* --- HERO SECTION --- */
+
+#hero {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-cont-1 h1 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.hero-cont-1 p {
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.hero-cont-2 {
+  display: flex;
+  padding-bottom: 2rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+ 
