@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Contact Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-cont-1">
+        <a href="index.html" target="_self"
+          ><img src="logos/circle.svg" alt="Logo circle" class="logo"
+        /></a>
+      </div>
+      <div class="header-cont-2">
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="index.html#services" class="nav-link">Services</a></li>
+            <li><a href="contact.html" class="nav-button">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-cont-3">
+        <button id="menu-hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="form-cont">
+      <form id="form">
+        <h2>Contact Us</h2>
+        <div class="input-group">
+          <p>Full name</p>
+          <img src="contact-page/thumbs-down.svg" alt="Thumbs down red icon" />
+          <input
+            name="name"
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+          />
+          <small class="error-message"></small>
+        </div>
+        <div class="input-group">
+          <p>Email</p>
+          <img src="contact-page/thumbs-down.svg" alt="Thumbs down red icon" />
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Enter your email adress"
+          />
+          <small class="error-message"></small>
+        </div>
+        <div class="input-group">
+          <p>Phone</p>
+          <img src="contact-page/thumbs-down.svg" alt="Thumbs down red icon" />
+          <input
+            name="phone"
+            type="number"
+            id="phone"
+            placeholder="Enter your phone number"
+          />
+          <small class="error-message"></small>
+        </div>
+        <div class="input-group">
+          <p>Message</p>                
+          <img src="contact-page/thumbs-down.svg" alt="Thumbs down red icon" />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Escribe tu mensaje aquí..."
+            rows="5"
+            cols="30"
+          ></textarea>
+          <small class="error-message"></small>
+        </div>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </main>
+    <footer id="footer">
+      <div class="footer-cont-1">
+        <a href="#header" target="_self"
+          ><img src="logos/circle.svg" alt="Logo circle"
+        /></a>
+        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+      </div>
+      <ul class="footer-cont-2">
+        <li><a href="#hero">Team</a></li>
+        <li><a href="#hero">Services</a></li>
+        <li><a href="#hero">About Us</a></li>
+        <li><a href="#hero">Press</a></li>
+        <li><a href="#hero">Projects</a></li>
+        <li><a href="#hero">Privacy Policy</a></li>
+      </ul>
+    </footer>
+    <script src="functions.js" defer></script>
+  </body>
+</html>

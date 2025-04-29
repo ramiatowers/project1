@@ -23,6 +23,7 @@ img {
   background-color: #072AC8;
   color: white;
   text-decoration: none;
+  border: 0;
   border-radius: 0.5rem;
   font-weight: bold;
 }
@@ -201,9 +202,9 @@ img {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: black;
-  padding-bottom: 2rem;
+  padding: 0rem 0rem 2rem 0rem;
 }
 
 #projects a {
@@ -429,6 +430,7 @@ h2 {
 
 .footer-cont-1 p {
   padding: 2rem;
+  text-align: center;
 }
 
 .footer-cont-2 {
@@ -454,7 +456,73 @@ h2 {
   filter: saturate(100%);
 }
 
+/* --- FORM SECTION --- */
 
+#form-cont {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
 
+#form-cont h2 {
+  padding-bottom: 2rem;
+}
+
+#form-cont form {
+  width: 100%;
+}
+
+#form-cont p {
+  font-size: 1rem;
+  padding: 0rem 0rem 0.5rem 0rem;
+  font-weight: normal;
+  color: #6B708D;
+}
+
+#form-cont input, textarea {
+  background-color: #E1E3F0;
+  width: 100%;
+  padding: 1rem 0rem 1rem 0.5rem;
+  border: none;
+}
+
+#form-cont input::placeholder, textarea::placeholder {
+  color: #6B708D;
+}
+
+#form-cont button {
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.input-group img {
+  display: flex;
+  position: absolute;
+  width: 1rem;
+  left: 74vw;
+  top: 3.5vh;
+}
+
+.input-error {
+  outline: 0.1rem solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+}
 
  
