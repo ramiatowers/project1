@@ -11,6 +11,10 @@ body {
   background-color: #F2F4FC;
 }
 
+main {
+  max-width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -191,7 +195,7 @@ img {
 
 /* --- PROJECTS SECTION --- */
 
-#projects {
+.projects {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -207,7 +211,7 @@ h2 {
   padding: 0rem 0rem 2rem 0rem;
 }
 
-#projects a {
+.projects a {
   text-decoration: none;
 }
 
@@ -456,7 +460,7 @@ h2 {
   filter: saturate(100%);
 }
 
-/* --- FORM SECTION --- */
+/* --- CONTACT PAGE --- */
 
 #form-cont {
   display: flex;
@@ -523,6 +527,65 @@ h2 {
   font-size: 1rem;
   margin-top: 0.5rem;
   display: flex;
+}
+
+/* --- PROJECTS PAGE --- */
+
+#dinamic-project {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.dinamic-title{
+  font-size: 2rem;
+}
+
+.dinamic-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.dinamic-description {
+  font-size: 0.8rem;
+  color: #6B708D;
+  text-align: center;
+  font-weight: normal;
+  padding: 1rem;
+}
+
+.dinamic-date{
+  font-size: 0.8rem;
+  color: #6B708D;
+  text-align: center;
+  font-weight: normal;
+  padding: 1rem;
+}
+
+.dinamic-img {
+  width: 100%;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.dinamic-text {
+  color: #6B708D;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.projects-title {
+  color: #072AC8;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
 }
 
  
