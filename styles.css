@@ -21,6 +21,19 @@ img {
   display: block; /*Lo aplico para quitar el margen inferior por defecto de todas las imágenes*/
 }
 
+h1 {
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 2rem;
+  color: black;
+  justify-content: center;
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -130,15 +143,7 @@ img {
   width: 100%;
   padding: 0.5rem 2rem 0rem 2rem;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
   align-items: center;
-}
-
-.hero-cont-1 h1 {
-  font-size: 2.2rem;
-  padding-bottom: 2rem;
-  font-weight: bolder;
 }
 
 .hero-cont-1 p {
@@ -147,14 +152,13 @@ img {
   font-weight: lighter;
 }
 
-.hero-cont-2 {
+.hero-cont-links {
   display: flex;
-  width: 100%;
   padding-bottom: 2rem;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -164,7 +168,7 @@ img {
   color: #6B708D;
 }
 
-.hero-cont-3 {
+.hero-cont-2 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -195,6 +199,15 @@ img {
 
 /* --- PROJECTS SECTION --- */
 
+#projects-feed {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items:flex-start;
+}
+
 .projects {
   display: flex;
   width: 100%;
@@ -203,12 +216,6 @@ img {
   justify-content: space-around;
   align-items: flex-start;
   padding: 2rem 2rem 0rem 2rem;
-}
-
-h2 {
-  font-size: 2rem;
-  color: black;
-  padding: 0rem 0rem 2rem 0rem;
 }
 
 .projects a {
@@ -255,6 +262,7 @@ h2 {
   width: 100%;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 .testimonials-cont {
@@ -277,7 +285,7 @@ h2 {
   font-size: 1rem;
   font-style: italic;
   padding: 1rem 0rem 2rem 0rem;
-  font-weight: lighter;
+  font-weight: normal;
   color: #FFC600;
 }
 
@@ -285,7 +293,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -295,6 +303,7 @@ h2 {
   border-radius: 50%;
   object-fit: cover;
   background-color: #F2F4FC;
+  margin-right: 1rem;
 }
 
 .review p {
@@ -312,15 +321,22 @@ h2 {
 #services {
   display: flex;
   width: 100%;
+  overflow: hidden;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-start;
   padding: 1rem;
 }
 
+#services h2 {
+  padding-bottom: 4rem;
+}
+
 .services-cont {
+  display: flex;
+  max-width: 100%;
   background-color: white;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
   margin-bottom: 2rem;
 }
 
@@ -473,7 +489,7 @@ h2 {
 }
 
 #form-cont h2 {
-  padding-bottom: 2rem;
+  padding: 0rem 0rem 2rem 0rem;
 }
 
 #form-cont form {
@@ -586,6 +602,317 @@ h2 {
   text-align: center;
   width: 100%;
   font-size: 1.5rem;
+}
+
+/* ELEMENTS ADDED IN TABLET AND DESKTOP VERSIONS */
+
+.floating-card-1, .floating-card-2 {
+  display: none;
+}
+
+.lorem-project {
+  display: none;
+}
+
+.emoji-1, .emoji-2, .emoji-3, .emoji-4 {
+  display: none;
+}
+
+/* --- TABLET (768) STYLES --- */
+
+@media (min-width: 768px) {
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-cont-1 {
+    display: flex;
+    flex: 1;
+  }
+  
+  .header-cont-2 {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+   }
+
+   .header-cont-3 {
+    display: none;
+  }
+  
+  #nav-menu {
+    display: flex;
+    margin: 0;
+    padding: 0; 
+  }
+
+  #nav-menu ul {
+    display: flex;
+    gap: 4rem;
+  }  
+  
+  #hero {
+    display: flex;
+    width: 100%;
+    padding: 0rem;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  .hero-cont-1 {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  .hero-cont-1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-cont-links {
+    padding-bottom: 0rem;
+  }
+
+  .hero-cont-2 {
+    width: 40%;
+    display: relative;
+    position: relative;
+    padding-right: 2rem;
+    overflow: hidden;
+  }
+  
+  .hero-main {
+    width: 100%;
+    padding: 0rem;
+    display: block;
+    border-radius: 1rem;
+  }
+
+  .floating-card-1 {
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    top: 3rem;
+    right: 11rem;
+  }
+
+  .floating-card-2 {
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    bottom: -2rem;
+    left: 9rem;
+  }
+
+  .lorem-project {
+    display: flex;
+  }
+
+  .projects {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .projects a {
+    width: 50%;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  
+  #testimonials {
+    margin-bottom: 1rem;
+  }
+
+  .testimonials-cont {
+    display: relative;
+    width: 100%;
+    margin: 0rem;
+    background-color: #292E47;
+    background-image: url("testimonial-section/orbit.png");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .testimonials-cont h4 {
+    padding: 1rem 10rem 2rem 10rem;
+  }
+
+  .emoji-1, .emoji-2, .emoji-3, .emoji-4 {
+    display: block;
+    position: absolute;
+    width: 5rem;
+  }
+
+  .emoji-1 {
+    top: 104rem;
+    right: 42rem;
+  }
+
+  .emoji-2 {
+    top: 104rem;
+    right: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .emoji-3 {
+    top: 122rem;
+    right: 42rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .emoji-4 {
+    top: 122rem;
+    right: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .services-cont {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .newsletter-cont {
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  #footer {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3rem;
+    flex-direction: row;
+  }
+
+  .footer-cont-1 {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-cont-1 img{
+    padding: 2rem;
+  }
+
+  .footer-cont-1 p {
+    text-align: left;
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  
+  .footer-cont-2 {
+    flex: 2;
+  }
+  
+  .footer-cont-2 li {
+    width: 33%;
+    padding: 1rem;
+  }
+
+  .input-group img {
+    display: flex;
+    position: absolute;
+    width: 1.5rem;
+    left: 88vw;
+    top: 4vh;
+  }
+}
+
+/* Estilos para desktop (pantallas grandes) */
+@media (min-width: 1024px) {
+  
+  #hero {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 2rem 0rem 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-cont-1 h1 {
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.hero-cont-1 p {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  font-weight: lighter;
+}
+
+.hero-cont-img {
+  display: flex;
+  width: 100%;
+  padding-bottom: 2rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #6B708D;
+}
+
+.hero-cont-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2rem 0rem 2rem 0rem;
+}
+  
+  #header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 0;
+  }
+
+  #menu-hamburger {
+    display: none;
+  }
+
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .projects-cont {
+    width: 30%;
+    margin: 1rem;
+  }
+
+  #services {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .services-cont {
+    width: 30%;
+    margin: 1rem;
+  }
 }
 
  
