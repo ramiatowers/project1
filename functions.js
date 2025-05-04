@@ -192,3 +192,16 @@ function removeProject(selectedProject) {
 removeProject(selectedProject);
 
 }
+
+/* Si bajás más de 300 píxeles, se agregue la clase .visible.
+Si volvés arriba, se remueve y la flecha desaparece. */
+
+const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollToTopButton.classList.add('visible');
+  } else {
+    scrollToTopButton.classList.remove('visible');
+  }
+});
