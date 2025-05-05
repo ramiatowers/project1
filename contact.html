@@ -17,7 +17,9 @@
         <nav id="nav-menu">
           <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="index.html#projects-feed" class="nav-link">Projects</a></li>
+            <li>
+              <a href="index.html#projects-feed" class="nav-link">Projects</a>
+            </li>
             <li><a href="index.html#services" class="nav-link">Services</a></li>
             <li><a href="contact.html" class="nav-button">Contact Us</a></li>
           </ul>
@@ -37,47 +39,70 @@
         <h2>Contact Us</h2>
         <div class="input-group">
           <p>Full name</p>
-          <img src="contact-page/thumbs-down.svg" alt="Thumbs down red icon" />
-          <input
-            name="name"
-            type="text"
-            id="name"
-            placeholder="Enter your full name"
-          />
+          <div class="thumbs-corner">
+            <img
+              src="contact-page/thumbs-down.svg"
+              alt="Thumbs down red icon"
+            />
+            <input
+              name="name"
+              type="text"
+              id="name"
+              placeholder="Enter your full name"
+            />
+          </div>
           <small class="error-message"></small>
         </div>
-        <div class="input-group">
-          <p>Email</p>
-          <img src="contact-page/thumbs-down.svg" alt="Thumbs down red icon" />
-          <input
-            name="email"
-            type="email"
-            id="email"
-            placeholder="Enter your email adress"
-          />
-          <small class="error-message"></small>
+        <div class="form-slots">
+          <div class="input-group">
+            <p>Email</p>
+            <div class="thumbs-corner">
+              <img
+                src="contact-page/thumbs-down.svg"
+                alt="Thumbs down red icon"
+              />
+              <input
+                name="email"
+                type="email"
+                id="email"
+                placeholder="Enter your email adress"
+              />
+            </div>
+            <small class="error-message"></small>
+          </div>
+          <div class="input-group">
+            <p>Phone</p>
+            <div class="thumbs-corner">
+              <img
+                src="contact-page/thumbs-down.svg"
+                alt="Thumbs down red icon"
+              />
+              <input
+                name="phone"
+                type="number"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <small class="error-message"></small>
+          </div>
         </div>
         <div class="input-group">
-          <p>Phone</p>
-          <img src="contact-page/thumbs-down.svg" alt="Thumbs down red icon" />
-          <input
-            name="phone"
-            type="number"
-            id="phone"
-            placeholder="Enter your phone number"
-          />
-          <small class="error-message"></small>
-        </div>
-        <div class="input-group">
-          <p>Message</p>                
-          <img src="contact-page/thumbs-down.svg" alt="Thumbs down red icon" />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Escribe tu mensaje aquí..."
-            rows="5"
-            cols="30"
-          ></textarea>
+          <p>Message</p>
+          <div class="thumbs-corner">
+            <img
+              src="contact-page/thumbs-down.svg"
+              alt="Thumbs down red icon"
+              class="message-thumb"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Escribe tu mensaje aquí..."
+              rows="5"
+              cols="30"
+            ></textarea>
+          </div>
           <small class="error-message"></small>
         </div>
         <button type="submit" class="button">Submit</button>

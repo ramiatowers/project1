@@ -560,12 +560,14 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.input-group img {
-  display: flex;
+.thumbs-corner {
+  position: relative;
+}
+.thumbs-corner img {
   position: absolute;
   width: 1rem;
-  left: 74vw;
-  top: 3.5vh;
+  right: 3%;
+  top: 5%;
 }
 
 .input-error {
@@ -661,8 +663,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 2rem;
   }
   
   .header-cont-1 {
@@ -694,7 +695,6 @@ h2 {
   #hero {
     display: flex;
     width: 100%;
-    padding: 0rem;
     flex-direction: row;
     padding: 2rem 0rem 2rem 0rem;
   }
@@ -742,8 +742,8 @@ h2 {
     position: absolute;
     width: 10rem;
     height: auto;
-    top: 3rem;
-    right: 11rem;
+    top: 10%;
+    left: -10%;
   }
 
   .floating-card-2 {
@@ -751,8 +751,8 @@ h2 {
     position: absolute;
     width: 10rem;
     height: auto;
-    bottom: -2rem;
-    left: 9rem;
+    bottom: 0%;
+    right: 0%;
   }
 
   #logos {
@@ -841,7 +841,7 @@ h2 {
     margin-bottom: 0rem;
   }
 
-  #footer form {
+  #footer {
     display: flex;
     width: 100%;
     margin-bottom: 3rem;
@@ -873,12 +873,57 @@ h2 {
     padding: 1rem;
   }
 
-  .input-group img {
+  .input-group {
+    width: 100%;
+  }
+
+  .thumbs-corner img {
+    right: 1%;
+  }
+
+  .form-slots {
     display: flex;
-    position: absolute;
-    width: 1.5rem;
-    left: 88vw;
-    top: 4vh;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  #dinamic-project {
+    display: flex;
+    padding: 2rem 5rem;
+  }
+
+  .dinamic-title{
+    font-size: 4rem;
+    padding: 1rem 0rem;
+  }
+
+  .dinamic-info {
+    display: flex;
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+
+  .dinamic-description {
+    font-size: 1.5rem;
+  }
+
+  .dinamic-date {
+    font-size: 1rem;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
+    color: #072AC8;
+    text-align: left;
+  }
+
+  .projects-palette {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -923,14 +968,15 @@ h2 {
   }
 
   .floating-card-1 {
-    width: 15rem;
-    right: 13rem;
+    width: 12rem;
+    left: -8%;
+    top: 10%;
   }
 
   .floating-card-2 {
-    width: 15rem;
-    left: 10rem;
-    top: 16rem;
+    width: 12rem;
+    right: 0%;
+    bottom: -2%;
   }
 
   #logos {
@@ -943,10 +989,19 @@ h2 {
 
   #projects-feed {
     margin: 0;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 1rem;
   }
 
   .projects {
+    flex-wrap: nowrap;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects-palette {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -988,6 +1043,8 @@ h2 {
     width: 30vw;
     margin: 0rem 2rem 0rem 2rem;
   }
+
+  
 }
 
  

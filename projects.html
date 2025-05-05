@@ -45,57 +45,59 @@
 
       <section id="projects" class="projects">
         <h2 class="projects-title">Other Projects</h2>
-        <a href="projects.html?project=simplify" target="_self" id="simplify">
-          <div class="projects-cont">
-            <img
-              src="projects-section/1.jpg"
-              alt="Abstract image of the project"
-            />
-            <h3>Simplify</h3>
-            <h4>UI Design & App Development</h4>
-            <p>Learn more</p>
-          </div>
-        </a>
-        <a href="projects.html?project=dashcoin" target="_self" id="dashcoin">
-          <div class="projects-cont">
-            <img
-              src="projects-section/2.jpg"
-              alt="Abstract image of the project"
-            />
-            <h3>Dashcoin</h3>
-            <h4>Web Development</h4>
-            <p>Learn more</p>
-          </div>
-        </a>
-        <a href="projects.html?project=vectorify" target="_self" id="vectorify">
-          <div class="projects-cont">
-            <img
-              src="projects-section/3.jpg"
-              alt="Abstract image of the project"
-            />
-            <h3>Vectorify</h3>
-            <h4>User Experience Design</h4>
-            <p>Learn more</p>
-          </div>
-        </a>
-        <a href="projects.html?project=lorem" target="_self" id="lorem">
-          <div class="projects-cont">
-            <img
-              src="projects-section/4.jpg"
-              alt="Abstract image of the project"
-            />
-            <h3>Lorem ipsum</h3>
-            <h4>Lorem ipsum</h4>
-            <p>Learn more</p>
-          </div>
-        </a>
+        <div class="projects-palette">
+          <a href="projects.html?project=simplify" target="_self" id="simplify">
+            <div class="projects-cont">
+              <img
+                src="projects-section/1.jpg"
+                alt="Abstract image of the project"
+              />
+              <h3>Simplify</h3>
+              <h4>UI Design & App Development</h4>
+              <p>Learn more</p>
+            </div>
+          </a>
+          <a href="projects.html?project=dashcoin" target="_self" id="dashcoin">
+            <div class="projects-cont">
+              <img
+                src="projects-section/2.jpg"
+                alt="Abstract image of the project"
+              />
+              <h3>Dashcoin</h3>
+              <h4>Web Development</h4>
+              <p>Learn more</p>
+            </div>
+          </a>
+          <a href="projects.html?project=vectorify" target="_self" id="vectorify">
+            <div class="projects-cont">
+              <img
+                src="projects-section/3.jpg"
+                alt="Abstract image of the project"
+              />
+              <h3>Vectorify</h3>
+              <h4>User Experience Design</h4>
+              <p>Learn more</p>
+            </div>
+          </a>
+          <a href="projects.html?project=lorem" target="_self" id="lorem">
+            <div class="projects-cont">
+              <img
+                src="projects-section/4.jpg"
+                alt="Abstract image of the project"
+              />
+              <h3>Lorem ipsum</h3>
+              <h4>Lorem ipsum</h4>
+              <p>Learn more</p>
+            </div>
+          </a>
+        </div>
       </section>
 
       <section id="newsletter">
         <div class="newsletter-cont">
           <h2>Do you have any questions?</h2>
           <h4>Let us help you!</h4>
-          <form action="contact.html" method="post">
+          <form action="contact.html" method="get" class="news-form">
             <div class="input-box">
               <img
                 src="newsletter/icon/mail.svg"
@@ -104,8 +106,8 @@
               />
               <input type="email" placeholder="Enter your email" />
             </div>
-            <button type="submit" class="button">Suscribe</button>
           </form>
+          <a href="contact.html" class="button">Suscribe</a>
         </div>
       </section>
     </main>
